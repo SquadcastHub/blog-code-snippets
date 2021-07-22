@@ -1,0 +1,16 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: add-deployment-label
+spec:
+  rules:
+  - name: add-deployment-label
+    match:
+      resources:
+        kinds:
+        - Deployment
+    mutate:
+      patches:
+      - path: /metadata/labels/company
+        op: add
+        value: squadcast
