@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webhook-test
+  labels:
+    app: webhook-test
+    company: squadcast
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webhook-test
+  template:
+    metadata:
+      labels:
+        app: webhook-test
+    spec:
+      containers:
+      - image: nginx
+        name: nginx

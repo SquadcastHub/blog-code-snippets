@@ -1,0 +1,1 @@
+$ kubectl -n development describe limitrange

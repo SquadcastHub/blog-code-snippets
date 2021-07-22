@@ -1,0 +1,1 @@
+$ kubectl -n kyverno logs  -l app.kubernetes.io/component=kyverno

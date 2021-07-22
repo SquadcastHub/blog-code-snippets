@@ -1,0 +1,1 @@
+$ kubectl create deployment mutate-test --image=nginx

@@ -1,0 +1,1 @@
+$ kubectl create deployment webhook-test --image=nginx

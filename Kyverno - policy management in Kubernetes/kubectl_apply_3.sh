@@ -1,0 +1,1 @@
+$ kubectl apply -f generating_policy.yaml
